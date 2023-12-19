@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Application Form</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="xpage1.html">Home</a></li>
+            <li><a href="application.html">Apply</a></li>
+        </ul>
+    </nav>
+
+    <section id="application-form">
+        <h2>Apply to AltSchool</h2>
+        <form action="submit_application.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Gender Dropdown -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <!-- End of Gender Dropdown -->
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <!-- End of Date of Birth -->
+
+            <!-- Education Level -->
+            <label for="education-level">Education Level:</label>
+            <input type="text" id="education-level" name="education_level" required><br><br>
+            <!-- End of Education Level -->
+
+            <!-- State/City of Residence -->
+            <label for="residence">State/City of Residence:</label>
+            <input type="text" id="residence" name="residence" required><br><br>
+            <!-- End of State/City of Residence -->
+
+            <!-- Choose School -->
+            <label for="school">Choose School:</label>
+            <select id="school" name="school">
+                <option value="school1">School 1</option>
+                <option value="school2">School 2</option>
+                <option value="school3">School 3</option>
+            </select><br><br>
+            <!-- End of Choose School -->
+
+            <!-- Choose School of Study -->
+            <label for="school-of-study">Choose School of Study:</label>
+            <select id="school-of-study" name="school_of_study">
+                <option value="school1">School of Engineering</option>
+                <option value="school2">School of Data</option>
+            </select><br><br>
+            <!-- End of Choose School of Study -->
+
+            <!-- How Did You Hear About Us? -->
+            <label for="hear-about">How Did You Hear About Us?</label>
+            <textarea id="hear-about" name="hear_about" rows="4" required></textarea><br><br>
+            <!-- End of How Did You Hear About Us? -->
+
+            <!-- Scholarship Discount Code -->
+            <label for="discount-code">Scholarship Discount Code:</label>
+            <input type="text" id="discount-code" name="discount_code"><br><br>
+            <!-- End of Scholarship Discount Code -->
+
+            <!-- Add more form fields as needed -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Add navigation links to other pages here -->
+
+    <footer>
+        <p>&copy; 2023 Gbadebo Ajayi</p>
+    </footer>
+</body>
+</html>
